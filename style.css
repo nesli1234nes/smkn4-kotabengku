@@ -1,16 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+/* Menata logo */
+.logo {
+    width: 60px;
+    /* Ukuran logo */
+    height: auto;
+    /* Agar logo proporsional */
+    margin-left: 20px;
+    /* Memberikan jarak antara logo dan tepi kiri */
+    margin-right: 20px;
+    /* Memberikan jarak antara logo dan judul */
+    vertical-align: middle;
+    /* Agar logo sejajar dengan teks */
 }
 
+/* Menata bagian header agar logo di kiri dan judul di kanan */
 header {
     background-color: #005a87;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    /* Menggunakan Flexbox untuk menyusun elemen secara horizontal */
+    align-items: center;
+    /* Menjaga logo dan judul sejajar secara vertikal */
+}
+
+header h1 {
+    margin: 0;
+    /* Menghapus margin default pada <h1> */
+    flex-grow: 1;
+    /* Membuat <h1> mengisi ruang yang tersisa di header */
 }
 
 nav ul {
